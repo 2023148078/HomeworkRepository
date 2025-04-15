@@ -1,0 +1,155 @@
+/* 기본 설정 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.about-section {
+  max-width: 1020px;
+  margin: 40px auto;
+  padding: 20px;
+  border-top: 3px solid #888;
+  background-color: #fdfdfd;
+}
+
+.about-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.about-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
+
+/* 1020px 제한 */
+body > * {
+  max-width: 1020px;
+  margin: auto;
+}
+
+/* 헤더 슬라이딩 */
+.header-wrapper {
+  overflow: hidden;
+  height: 100px;
+}
+
+.sliding-header {
+  animation-name: slide-in;
+  animation-duration: 2s;
+  white-space: nowrap;
+  width: fit-content;
+  position: relative;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* 네비게이션 */
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.nav-bar a:hover {
+  background-color: #555;
+}
+
+/* 메인 컨테이너 및 중첩 Flex */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.movie-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 2s ease;
+}
+
+.movie-image-container:hover img {
+  transform: scale(1.2);
+}
+
+/* hover 시 텍스트 오버레이 */
+.overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.movie-image-container:hover .overlay {
+  opacity: 1;
+}
+
+/* 미디어 쿼리: 반응형 레이아웃 */
+@media (max-width: 480px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  .main-container {
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 801px) {
+  .main-container {
+    justify-content: space-between;
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+form table {
+  width: 400px;
+  border-collapse: collapse;
+}
