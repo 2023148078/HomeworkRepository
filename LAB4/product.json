@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "title": "Toy Story",
+    "release_date": "1995-10-30",
+    "rating": 7.7,
+    "plot": "Led by Woody, Andy's toys live happily in his room until Andy's birthday brings Buzz Lightyear onto the scene. Afraid of losing his place in Andy's heart, Woody plots against Buzz. But when circumstances separate Buzz and Woody from their owner, the duo eventually learns to put aside their differences.",
+    "poster": "images/toy_story.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Jumanji",
+    "release_date": "1995-12-15",
+    "rating": 6.9,
+    "plot": "When siblings Judy and Peter discover an enchanted board game that opens the door to a magical world, they unwittingly invite Alan -- an adult who's been trapped inside the game for 26 years -- into their living room. Alan's only hope for freedom is to finish the game, which proves risky as all three find themselves running from giant rhinoceroses, evil monkeys and other terrifying creatures.",
+    "poster": "images/jumanji.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Heat",
+    "release_date": "1995-12-15",
+    "rating": 8.3,
+    "plot": "A group of professional bank robbers start to feel the heat from police when they unknowingly leave a clue at their latest heist.",
+    "poster": "images/heat.jpg"
+  },
+  {
+    "id": 4,
+    "title": "GoldenEye",
+    "release_date": "1995-11-16",
+    "rating": 7.2,
+    "plot": "James Bond teams up with the lone survivor of a destroyed Russian research center to stop the hijacking of a nuclear space weapon by a fellow Agent formerly believed to be dead.",
+    "poster": "images/goldeneye.jpg"
+  },
+  {
+    "id": 5,
+    "title": "The Lion King",
+    "release_date": "1994-06-24",
+    "rating": 8.5,
+    "plot": "A Lion cub crown prince is tricked by a treacherous uncle into thinking he caused his father's death and flees into exile in despair, only to learn in adulthood his identity and his responsibilities.",
+    "poster": "images/lion_king.jpg"
+  },
+  {
+    "id": 6,
+    "title": "The Shawshank Redemption",
+    "release_date": "1994-09-23",
+    "rating": 9.3,
+    "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    "poster": "images/shawshank_redemption.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Pulp Fiction",
+    "release_date": "1994-10-14",
+    "rating": 8.9,
+    "plot": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+    "poster": "images/pulp_fiction.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Forrest Gump",
+    "release_date": "1994-07-06",
+    "rating": 8.8,
+    "plot": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate and other historical events unfold through the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+    "poster": "images/forrest_gump.jpg"
+  },
+  {
+    "id": 9,
+    "title": "The Matrix",
+    "release_date": "1999-03-31",
+    "rating": 8.7,
+    "plot": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+    "poster": "images/matrix.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Fight Club",
+    "release_date": "1999-10-15",
+    "rating": 8.8,
+    "plot": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+    "poster": "images/fight_club.jpg"
+  },
+  {
+    "id": 11,
+    "title": "The Godfather",
+    "release_date": "1972-03-24",
+    "rating": 9.2,
+    "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+    "poster": "images/godfather.jpg"
+  },
+  {
+    "id": 12,
+    "title": "The Dark Knight",
+    "release_date": "2008-07-18",
+    "rating": 9.0,
+    "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+    "poster": "images/dark_knight.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Schindler's List",
+    "release_date": "1993-12-15",
+    "rating": 8.9,
+    "plot": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+    "poster": "images/schindlers_list.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Inception",
+    "release_date": "2010-07-16",
+    "rating": 8.8,
+    "plot": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+    "poster": "images/inception.jpg"
+  },
+  {
+    "id": 15,
+    "title": "The Lord of the Rings: The Return of the King",
+    "release_date": "2003-12-17",
+    "rating": 8.9,
+    "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+    "poster": "images/lotr_return_king.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Parasite",
+    "release_date": "2019-05-30",
+    "rating": 8.6,
+    "plot": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+    "poster": "images/parasite.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Avengers: Endgame",
+    "release_date": "2019-04-26",
+    "rating": 8.4,
+    "plot": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+    "poster": "images/avengers_endgame.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Interstellar",
+    "release_date": "2014-11-07",
+    "rating": 8.6,
+    "plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+    "poster": "images/interstellar.jpg"
+  },
+  {
+    "id": 19,
+    "title": "The Silence of the Lambs",
+    "release_date": "1991-02-14",
+    "rating": 8.6,
+    "plot": "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+    "poster": "images/silence_of_the_lambs.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Goodfellas",
+    "release_date": "1990-09-21",
+    "rating": 8.7,
+    "plot": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
+    "poster": "images/goodfellas.jpg"
+  }
+]

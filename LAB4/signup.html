@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 - 인프밍 영화 정보 사이트</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>인프밍 영화 정보 사이트입니다.</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">메인페이지</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="signup.html">회원가입</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="form-container">
+            <h2>회원가입</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="username">아이디</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">비밀번호 확인</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">생년월일</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+                <div class="form-group">
+                    <p>성별</p>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">남성</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">여성</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p>관심 장르</p>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="action" name="genre" value="action">
+                        <label for="action">액션</label>
+                        <input type="checkbox" id="comedy" name="genre" value="comedy">
+                        <label for="comedy">코미디</label>
+                        <input type="checkbox" id="drama" name="genre" value="drama">
+                        <label for="drama">드라마</label>
+                        <input type="checkbox" id="horror" name="genre" value="horror">
+                        <label for="horror">공포</label>
+                        <input type="checkbox" id="sf" name="genre" value="sf">
+                        <label for="sf">SF</label>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit">가입하기</button>
+                    <button type="reset">초기화</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const signupForm = document.getElementById('signupForm');
+            
+            signupForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // 비밀번호 확인
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+                
+                if (password !== confirmPassword) {
+                    alert('비밀번호가 일치하지 않습니다.');
+                    return;
+                }
+                
+                // 관심 장르 확인
+                const genreCheckboxes = document.querySelectorAll('input[name="genre"]:checked');
+                if (genreCheckboxes.length === 0) {
+                    alert('관심 장르를 최소한 하나 이상 선택해주세요.');
+                    return;
+                }
+                
+                // 폼 데이터 수집
+                const formData = {
+                    username: document.getElementById('username').value,
+                    password: password,
+                    email: document.getElementById('email').value,
+                    name: document.getElementById('name').value,
+                    birthdate: document.getElementById('birthdate').value,
+                    gender: document.querySelector('input[name="gender"]:checked').value,
+                    genres: Array.from(genreCheckboxes).map(cb => cb.value)
+                };
+                
+                // LocalStorage에 저장 (실제로는 서버로 전송할 것)
+                localStorage.setItem('user_' + formData.username, JSON.stringify(formData));
+                
+                alert('회원가입이 완료되었습니다! 로그인 페이지로 이동합니다.');
+                window.location.href = 'login.html';
+            });
+        });
+    </script>
+</body>
+</html>
